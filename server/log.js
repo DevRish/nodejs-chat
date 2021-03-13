@@ -1,5 +1,7 @@
 // Super simplistic logger
-var sys = require('util');
+//var sys = require('util');
+var console = require('console');
+var sys = { 'puts': console.log, 'debug': console.error };
 
 this.FATAL  = 4;
 this.ERROR  = 3;
